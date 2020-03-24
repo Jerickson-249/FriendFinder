@@ -227,8 +227,12 @@
                 method: "POST",
                 url: "/api/friends",
                 data: newSurvey
-            }, function (result) {
-                console.log(result)
+            }, function (data) {
+                console.log(data)
+                // you need to update withjquery the name and the photo in the src element
+                $("#match-name").text(data.name)
+                $("#match-img").attr("src", data.photo)
+                $("#results-modal").modal()
             })
         })
 // get the input from the form
