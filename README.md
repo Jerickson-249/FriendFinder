@@ -6,7 +6,7 @@ Week 13 Homework: Friend Finder on Node and Express Servers
 
 Express/ Path
 
-  1) Visit ("url") on the Heroku application.
+  1) Visit ("https://stark-crag-69885.herokuapp.com/") on the Heroku application.
   
   2) Click "Go to Survey".
   
