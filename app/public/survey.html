@@ -227,14 +227,15 @@
                 method: "POST",
                 url: "/api/friends",
                 data: newSurvey
-            }, function (data) {
+            }).done( function (data) {
                 console.log(data)
-                // you need to update withjquery the name and the photo in the src element
+                // you need to update with jquery the name and the photo in the src element
                 $("#match-name").text(data.name)
                 $("#match-img").attr("src", data.photo)
                 $("#results-modal").modal()
             })
         })
+       
 // get the input from the form
 // ajax call to the api/friends route method post
 // then when back, show the name and pic on the model
